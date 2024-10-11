@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Задание №5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style2.css">
+    <script src="calculator.js"></script>
+</head>
+
+<body>
+    <header class="text-center">
+        <img class="logo" src="logo.png" alt="Логотип">
+        <h1>Planet`Pizza</h1>
+    </header>
+    <div class="container-fluid">
+        <h2>Купить с доставкой:</h2>
+        <form name="calc" onsubmit="return false;">
+            <div class="row">
+                <div class="col-3">
+                    <h3>Пицца (вес)</h3>
+                </div>
+                <div class="col-2">
+                    <h3>Цена</h3>
+                </div>
+                <div class="col-2">
+                    <h3>Количество</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Пепперони (500гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price" type="number" value="400" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count" type="number"  value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Вегетарианская (350гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price1" type="number" value="279" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count1" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Мясная (750гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price2" type="number" value="555" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count2" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Итальянская (550гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price3" type="number" value="340" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count3" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Студенческая (200гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price4" type="number" value="144" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count4" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Семейная (1400гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price5" type="number" value="1200" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count5" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>IT-Pizza (1110гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price6" type="number" value="1010" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count6" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Planet-Pizza (1700гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price7" type="number" value="1300" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count7" type="number" value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>С ветчиной, грибами и овощами (700гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price8" type="number" value="489" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count8" type="number"  value="0" min="0">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>Острая (590гр)</p>
+                </div>
+                <div class="col-2">
+                    <input name="price9" type="number" value="333" readonly>
+                </div>
+                <div class="col-2">
+                    <input name="count9" type="number" value="0" min="0">
+                </div>
+            </div>
+            <button onclick="calculate();">Рассчитать стоимость заказа</button>
+        </form>
+        <div id="result"></div> 
+        </div>
+
+</body>
+</html>

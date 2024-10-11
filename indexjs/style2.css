@@ -1,0 +1,19 @@
+.logo{
+    width: 250px;
+    float: left;  
+    margin-right: 400px;  
+}
+h1{
+    text-align: left;
+    font-size: 100px;
+    color:rgb(62, 61, 68);
+}
+h2{padding-top:50px;
+    text-align: left;
+    color: rgb(0, 0, 0);
+}
+h3{padding-top: 50px;
+    color:rgb(255, 60, 1);}
+p{
+    font-size:20px;
+}
